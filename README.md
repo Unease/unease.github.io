@@ -1,2 +1,0 @@
-# AboutMe
-Solo website
