@@ -1,7 +1,54 @@
+/* Keep in mind this is my first time using CSS so stuff could be 
+a bit more efficient and this is highly experimental.*/
 
-body{
-    background-color: #4cc8f5;
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(fonts/Lato/Lato-Regular.ttf);
 }
-    h1{
-    background-color: #336ad1;
+body{
+    font-family: "Lato-regular", "consolas", "sans-serif";
+    color: white;
+    background: linear-gradient(to top, #336ad1, #4cc8f5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image:url(images/G1Bjkc.jpg);
+    overflow:hidden
+    
+}
+.avatar{
+    vertical-align: middle;
+    height: 100%;
+    width: 10%;
+    border-radius: 100%;
+    border-style:solid;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+p{
+    overflow:hidden;
+ word-wrap: break-word;
+}
+#header ul{
+    margin: -10px;
+    list-style-type:none;
+    padding: 5px;
+    overflow: auto;
+    background-color: #444444;
+    border-bottom: solid black 5px;
+}
+li a{
+float: left;
+display: block;
+color: white;
+padding: 10px 15px;
+text-align:center;
+text-decoration: none;
 }
