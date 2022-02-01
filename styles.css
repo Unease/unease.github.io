@@ -5,17 +5,19 @@ a bit more efficient and this is highly experimental.*/
     font-family: "Lato-Regular";
     src: url(fonts/Lato/Lato-Regular.ttf);
 }
+
+/*Background content*/
 body{
     font-family: "Lato-regular", "consolas", "sans-serif";
     color: white;
-    background: linear-gradient(to top, #336ad1, #4cc8f5);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-image:url(images/G1Bjkc.jpg);
     height:fit-content;
-    overflow:hidden;
-    
+    overflow-x: hidden;
+    overflow-y:auto;
+    text-align: center;
 }
 .avatar{
     vertical-align: middle;
@@ -24,32 +26,31 @@ body{
     border-radius: 100%;
     border-style:solid;
 }
-h1{
-    text-align: center;
-}
-h2{
-    text-align: center;
-}
-h3{
-    text-align: center;
-}
-p{
-    overflow:hidden;
- word-wrap: break-word;
-}
+
+/*Nav bar*/
 #header ul{
     margin: -10px;
     list-style-type:none;
     padding: 5px;
-    overflow: auto;
+    overflow: hidden;
     background-color: #444444;
-    border-bottom: solid black 5px;
 }
 li a{
 float: left;
 display: block;
 color: white;
 padding: 10px 15px;
-text-align:center;
 text-decoration: none;
+}
+a:hover{
+    color: rgb(105, 245, 255);
+    transition:0.5s;
+}
+a.active{
+    color:#88b1ff;
+}
+
+/*Text Content*/
+p{
+ word-wrap: break-word;
 }
